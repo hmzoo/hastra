@@ -22,7 +22,7 @@ class MainApp extends hxd.App {
         clock.x=40;
         clock.y=40;
 
-        target=new Target(1.05,1.05,0.1);
+        target=new Target(1,1,0.1);
 
 		s2d.scaleMode = Resize;
 		s2d.addChild(infos);

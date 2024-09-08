@@ -28,7 +28,7 @@ class Target {
         r=sr;
         var tplots=[];
         
-        vit=(2*Math.PI/360)/2;
+        vit=(2*Math.PI/360)/9;
 
 
         var p=r*2*Math.PI;
