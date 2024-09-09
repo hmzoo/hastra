@@ -1,0 +1,6 @@
+-cp src
+-lib heaps
+-main Hastra
+-js ./dist/hastra.js
+-debug
+#-D resourcesPath=res
