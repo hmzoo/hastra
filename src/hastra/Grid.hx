@@ -15,7 +15,7 @@ class Grid extends h2d.Object  {
     var pr:Float;
     var px:Float;
     var py:Float;
-    var data:String;
+    public var data:String;
 
     var target:Target;
 
@@ -64,8 +64,8 @@ class Grid extends h2d.Object  {
 
     function onRelease(e:hxd.Event){
         trace(data);
-        data=haxe.Json.stringify(target,"\t");
-        trace(data);
+        data=haxe.Json.stringify(target.tplots,"\t");
+        
     }
 
     function onMove(e:hxd.Event){
@@ -85,7 +85,11 @@ class Grid extends h2d.Object  {
         var y=(W-py)/(W/2);
         var r=pr/(W/2);
         target.calc(x,y,r);
-        var i="X: "+target.x+"\nY: "+target.y+"\nR: "+target.r+"\nSTEPS: "+target.steps;
+        var i="X: "+target.x+"\nY: "+target.y+"\nR: "+target.r+"\nSTEPS: "+target.steps+"\n\n";
+        var i=i+"MIN X: "+(x-r)+"\n";
+        var i=i+"MAX X: "+(x+r)+"\n";
+        var i=i+"MIN Y: "+(y-r)+"\n";
+        var i=i+"MAX Y: "+(y+r)+"\n";
         infos.text = i;
     }
 

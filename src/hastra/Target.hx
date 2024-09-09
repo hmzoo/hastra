@@ -20,7 +20,7 @@ class Target {
     public var y:Float;
     public var steps:Float;
 
-    var tplots:Array<Tplot>;
+  public   var tplots:Array<Tplot>;
 
     public function new() {
        
