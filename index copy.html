@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Hello Heaps</title>
+    <style>
+        body { margin:0;padding:0;background-color:grey; }
+        canvas#webgl { width:512px;height:512px; } 
+        textarea#data {height:100%;width:50%}
+    </style>
+</head>
+<body>
+    <canvas id="webgl"></canvas>
+    <textarea id="data"></textarea>
+    <script type="text/javascript" src="hastra.js"></script>
+    <script>
+        Hastra.updated = function(d){
+            const textarea = document.getElementById("data");
+            if(d){
+            textarea.value = d;
+            }
+        }
+    </script>
+</body>
+</html>
